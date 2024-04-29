@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Packages</title>
+  <link rel="stylesheet" href="package.css">
+  <script src="https://kit.fontawesome.com/094c1a5071.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*top navigation bar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.top-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #33343E;
+  opacity: 1;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.topnav {
+
+  width: 84%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.topnav h2 {
+  font-family: 'Itim', cursive;
+  font-size: 25px;
+}
+
+.topnav .heading-link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*change margin left*/
+.topnav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.topnav li {
+  text-decoration: none;
+  display: inherit;
+  transition: 5s;
+  padding-bottom: 2px;
+
+}
+
+.topnav a {
+  font-family: 'Itim', cursive;
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+
+.topnav a:hover {
+  background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+  border-radius: 10px;
+}
+
+.topnav a.active {
+  background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+  border-radius: 10px;
+}
+
+#login {
+  margin-left: 30px;
+}
+
+/*topnav end*/
+
+
+
+.contain {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  margin-top: 300px;
+
+}
+
+.contain span {
+  text-transform: uppercase;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.font {
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.title {
+  margin-left: 8%;
+  margin-top: 30px;
+  font-size: 20px;
+
+}
+
+.less,
+.more {
+  width: 35px;
+  height: 35px;
+  margin: 0px 5px 5px 0px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.less:hover {
+  background: #373847;
+}
+
+.more:hover {
+  background: #373847;
+}
+
+.less:hover i {
+  color: white;
+  opacity: 1;
+}
+
+.more:hover i {
+  color: white;
+  opacity: 1;
+}
+
+
+.slide {
+  float: right;
+  margin-right: 8%;
+  margin-bottom: 20px;
+
+}
+
+.package-container {
+  height: fit-content;
+  width: 86%;
+  clear: both;
+  display: flex;
+  justify-content: left;
+  overflow: auto;
+  margin: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.package {
+  height: fit-content;
+  min-width: 280px;
+  padding: 20px;
+  border-radius: 20px;
+  background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(142, 142, 142, 0.483) 0%, rgba(125, 125, 125, 0.069) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  background-color: #EEEEEE;
+  color: #171717;
+  /*     backdrop-filter: blur(4px); */
+  margin: 0px 105px 30px 0px;
+  cursor: pointer;
+  transition: 1s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+
+}
+
+.package-container::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.package-items {
+  width: 100%;
+}
+
+.package-items img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.place-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place {
+  width: 75%;
+}
+
+.day {
+  width: 40%;
+  text-align: right;
+  font-size: 12px;
+}
+
+/*.palce {
+float: left;
+overflow: hidden;
+
+}
+
+.day {
+margin-left: 20px;
+float: right;
+overflow: hidden;
+}*/
+
+.book {
+  border-radius: 8px;
+  padding: 5px;
+  width: 70px;
+  font-size: 15px;
+  border: 0;
+  background: #212121;
+
+}
+
+.book:hover {
+  border: 2px solid rgb(100, 184, 207);
+}
+
+
+.book a {
+  text-decoration: none;
+  color: white;
+}
+
+.cost-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.one {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeUp {
+  -webkit-animation-name: fadeUp;
+  animation-name: fadeUp;
+}
+
+
+.head {
+  width: 80%;
+  margin: auto;
+
+  overflow: hidden;
+}
+
+.content {
+  clear: right;
+
+}
+
+.head img {
+  float: right;
+
+  width: 25%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.text {
+
+  width: 75%;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.bla {
+  background: #D9D9D9;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;
+  margin: auto;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.head h1 {
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.head p {
+  line-height: 20px;
+}
+
+.demo {
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: auto;
+  margin-top: 15px;
+
+}
+
+.demo:hover a {
+  font-size: larger;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.demo a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: none;
+  margin-left: 5px;
+}
+
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s;
+}
+
+.trailer.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s;
+}
+
+.trailer video {
+  transition-delay: 0.5s;
+  position: relative;
+  width: 995px;
+
+  outline: none;
+  margin: auto;
+}
+
+@media (max-width: 991px) {
+  .trailer video {
+    position: relative;
+    width: 995px;
+
+    outline: none;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  filter: invert(1);
+
+}
+
+/*footer part */
+footer {
+  margin-top: 100px;
+  background-color: #33343E;
+  height: fit-content;
+  line-height: 35px;
+}
+
+.wrapper {
+  padding-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row1 ul,
+.row2 ul,
+.row3 ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.row1 li,
+.row2 li,
+.row3 li {
+  font-family: 'Itim', cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+#style-font {
+  font-family: 'Itim', cursive;
+}
+
+.row1 a,
+.row2 a,
+.row3 a {
+  font-family: 'Itim', cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wrapper a:hover {
+  padding-left: 10px;
+  color: #7EE8FA;
+  font-size: 20px;
+  border-left: 2px solid #EEC0C6;
+  margin-left: 0px;
+}
+
+.under {
+  text-align: center;
+  color: white;
+}
+
+</style>
+
+<body>
+      <!--top-nav-->
+      <div class="top-container">
+        <div class="topnav">
+          <div class="left">
+            <a href="home.html" class="heading-link">
+              <h2>SEE & FEEL</h2>
+            </a>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <a href="package.html" class="active">Package</a>
+              </li>
+              <li>
+                <a href="car_page_1.html">Bus</a>
+              </li>
+              <li>
+                <a href="flight_page_1.html">Flights</a>
+              </li>
+              <li>
+                <a href="login.html" id="login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!--topnav end-->
+
+
+  <div class="head">
+    <div class="banner">
+      <div class="content">
+        <img src="package_image/map-removebg-preview.png">
+        <div class="text">
+          <p class="bla">Travel agency</p>
+          <h1>Your Journey has just Began</h1>
+          <p>Wake up and start your travel adventure throught thousand of beautiful<br>destination of you beloved
+            Myanmar. Feel the jouurney, feel the nature, feel yourself</p>
+          <div class="demo-container">
+            <div class="demo" onclick="toggle();">
+              <i class="fa-solid fa-circle-play fa-2x"></i>
+              <a href="#">Watch Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trailer">
+        <video src="package_image/Myanmar_cinematic1.mp4" controls="true"></video>
+        <div class="close" onclick="toggle();"><i class="fa-solid fa-xmark fa-2x"></i></div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector(".trailer")
+      var video = document.querySelector("video")
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+
+
+
+
+
+
+  <div class="content">
+    <div class="title">
+      <h2>Popular<br> Distinations</h2>
+
+    </div>
+
+    <div class="slide">
+      <button class="less" onClick="scrolll()">
+        <i class="fa-solid fa-angle-left fa-2x"></i>
+      </button>
+      <button class="more" onClick="scrollr()">
+        <i class="fa-solid fa-angle-right fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="package-container" id="popular">
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <div class="package-items">
+          <img src="package_image/kyeik_hto.jpg" />
+          <h3>The Wonders of Myanmar</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Kyaik Hto</p>
+            <p class="day">6Days ,5Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1150</p>
+            </div>
+            <button class="book"><a href="myan-wonders-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+        <div class="package-items">
+          <img src="package_image/inlay.jpg" />
+          <h3>Myanmar Highlights</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Inlay
+            </p>
+            <p class="day">6Days ,5Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1650</p>
+            </div>
+            <button class="book"><a href="myanmar-highlight-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+        <div class="package-items">
+          <img src="package_image/nga_pa_li.jpg" />
+          <h3>Charming with Beaches</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Ngapali
+            </p>
+            <p class="day">8Days ,7Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1500</p>
+            </div>
+            <button class="book"><a href="beaches-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="package-items">
+          <img src="package_image/sagaing1.jpg" />
+          <h3>Landscape of Myanmar</h3>
+          <div class="place-day">
+            <p class="place">Mandalay-Amarapura</p>
+            <p class="day">8Days ,7Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1350</p>
+            </div>
+            <button class="book"><a href="myan-landscape-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="title">
+      <h2>Sightseeing</h2>
+
+    </div>
+
+    <div class="slide">
+      <button class="less" onClick="scrolll_sight()">
+        <i class="fa-solid fa-angle-left fa-2x"></i>
+      </button>
+      <button class="more" onClick="scrollr_sight()">
+        <i class="fa-solid fa-angle-right fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="package-container" id="sight">
+      <div class="package " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <div class="package-items">
+          <img src="package_image/inlay3.jpg" />
+          <h3>Myanmar Highlights</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Inlay
+            </p>
+            <p class="day">6Days ,5Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1650</p>
+            </div>
+            <button class="book"><a href="myanmar-highlight-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+        <div class="package-items">
+          <img src="package_image/kaw_taung.jpg" />
+          <h3>Scuba diving Adventure</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Myeik
+            </p>
+            <p class="day">5Days ,4Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$2500</p>
+            </div>
+            <button class="book"><a href="scuba-adventure-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+        <div class="package-items">
+          <img src="package_image/pyin_oo_lwin2.jpg" />
+          <h3>Colorful Myanmar</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Pyin Oo Lwin</p>
+            <p class="day">6Days ,5Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1000</p>
+            </div>
+            <button class="book"><a href="colorful-myanmar-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+        <div class="package-items">
+          <img src="package_image/kyeik_hto.jpg" />
+          <h3>The Wonders of Myanmar</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Kyaik Hto</p>
+            <p class="day">6Days ,5Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1150</p>
+            </div>
+            <button class="book"><a href="myan-wonders-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="title">
+      <h2>Vacation</h2>
+
+    </div>
+
+    <div class="slide">
+      <button class="less" onClick="scrolll_holiday()">
+        <i class="fa-solid fa-angle-left fa-2x"></i>
+      </button>
+      <button class="more" onClick="scrollr_holiday()">
+        <i class="fa-solid fa-angle-right fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="package-container" id="holiday">
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <div class="package-items">
+          <img src="package_image/bagan2.jpg" />
+          <h3>Fabulous holiday</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Bagan</p>
+            <p class="day">6Days ,5Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1200</p>
+            </div>
+            <button class="book"><a href="fabulous_holiday_intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+        <div class="package-items">
+          <img src="package_image/nga_pa_li.jpg" />
+          <h3>Charming with Beaches</h3>
+          <div class="place-day">
+            <p class="place">Yangon-Ngapali
+            </p>
+            <p class="day">8Days ,7Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1500</p>
+            </div>
+            <button class="book"><a href="beaches-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+        <div class="package-items">
+          <img src="package_image/sagaing1.jpg" />
+          <h3>Landscape of Myanmar</h3>
+          <div class="place-day">
+            <p class="place">Mandalay-Amarapura</p>
+            <p class="day">8Days ,7Night</p>
+          </div>
+          <div class="cost-book">
+            <div>
+              <p class="cost">$1350</p>
+            </div>
+            <button class="book"><a href="myan-landscape-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+        <div class="package-items">
+          <img src="package_image/heho.jpg" />
+          <h3>Yangon stopover with Inlay Extension
+          </h3>
+          <div class="place-day">
+            <p class="place">Yangon-Heho
+            </p>
+            <p class="day">4Days ,3Night</p>
+          </div>
+          <div class="cost-book" style="margin-top: 0px ;">
+            <div>
+              <p class="cost">$1170</p>
+            </div>
+            <button class="book"><a href="inlay-extension-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+        <div class="package-items">
+          <img src="package_image/nga_pa_li.jpg" />
+          <h3>Best of Myanmar
+          </h3> 
+          <div class="place-day">
+            <p class="place">Yangon-Ngapali
+            </p>
+            <p class="day">5Days ,4Night</p>
+          </div> <br>
+          <div class="cost-book" style="margin-top: 0px ;">
+            <div>
+              <p class="cost">$1800</p>
+            </div>
+            <button class="book"><a href="best-myanmar-intro.html">View</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+   
+  <footer>
+    <div class="wrapper">
+      <div class="row1">
+        <ul>
+          <li><a href="home.html">SEE & FEEL</a></li>
+
+          <li id="style-font">CONTACT</li>
+          <li>
+            <a href="tel:+959400408919"><i class="fa-solid fa-phone"> </i> &nbsp;09-400408919</a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps/place/See+and+Feel+Travels+%26+Tours/@16.8555921,96.120638,17z/data=!3m1!4b1!4m5!3m4!1s0x30c195177494b42b:0xc6235c23151f7118!8m2!3d16.8555863!4d96.1228266" target="_blank"><i
+                class="fa-solid fa-location-dot"> </i> &nbsp; Head Office</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row2">
+        <ul>
+          <li><a href="package.html">Package</a></li>
+          <li><a href="flight_page_1.html">Flight</a></li>
+          <li><a href="car_page_1.html">Bus</a></li>
+          <li> </li>
+        </ul>
+      </div>
+      <div class="row3">
+        <ul>
+          <li><a href="legal.html" class="effect">Legal</a></li>
+
+          <li><a href="terms.html" class="effect">Terms and Conditions</a></li>
+
+          <li><a href="privacy.html" class="effect">Privacy Policy</a></li>
+
+          <li> </li>
+        </ul>
+      </div>
+    </div> <br>
+    <div class="under"> <small>Copyright &copy; 2022 See & Feel </small></div>
+  </footer>
+  </div>
+
+
+
+
+  <script>
+    let space = -360;
+    let space1 = 360;
+    function scrolll() {
+      var left = document.querySelector("#popular");
+      left.scrollBy(space, 0)
+    }
+
+    function scrollr() {
+      var right = document.querySelector("#popular");
+      right.scrollBy(space1, 0)
+    }
+
+    function scrolll_holiday() {
+      var left = document.querySelector("#holiday");
+      left.scrollBy(space, 0)
+    }
+
+    function scrollr_holiday() {
+      var right = document.querySelector("#holiday");
+      right.scrollBy(space1, 0)
+    }
+
+    function scrolll_sight() {
+      var left = document.querySelector("#sight");
+      left.scrollBy(space, 0)
+    }
+
+    function scrollr_sight() {
+      var right = document.querySelector("#sight");
+      right.scrollBy(space1, 0)
+    }
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Package Booking</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="package_booking.css">
+        
+
+        <script src="https://kit.fontawesome.com/094c1a5071.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+        <style >
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+   background-image: url("package_image/majkell-projku-a_-hYhh-R3Q-unsplash.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/*top navigation bar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.top-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #33343E;
+  opacity: 1;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.topnav {
+
+  width: 84%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.topnav h2 {
+  font-family: 'Itim', cursive;
+  font-size: 25px;
+}
+
+.topnav .heading-link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*change margin left*/
+.topnav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.topnav li {
+  text-decoration: none;
+  display: inherit;
+  transition: 5s;
+  padding-bottom: 2px;
+
+}
+
+.topnav a {
+  font-family: 'Itim', cursive;
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+
+.topnav a:hover {
+  background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+  border-radius: 10px;
+}
+
+.topnav a.active {
+  background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+  border-radius: 10px;
+}
+
+#login {
+  margin-left: 30px;
+}
+
+/*topnav end*/
+
+
+
+.container{
+    background: linear-gradient(153.33deg, rgba(0, 0, 0, 0.35) 2.28%, rgba(0, 0, 0, 0.2) 97.62%);
+    font-weight: bold;
+    color: black;
+    padding: 20px ;
+    width: 410px;
+    border-radius: 20px;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+.form label{
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.form input,textarea{
+    padding: 20px;
+    
+}
+
+.gender{
+    margin-bottom: 8px;
+}
+
+#name,#nationality,#email,#phone,#special,#arrive{
+    width: 100%;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255,0.8);
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+#special{
+    height: 70px;
+}
+
+.button{
+    width: 100%;
+    background: linear-gradient(294.39deg, #7EE8FA 1.16%, #EEC0C6 99.99%, rgba(0, 0, 0, 0.5) 100%);
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    border: 0;
+    cursor:pointer;
+}
+
+.button:active{
+  transform: translateY(3px);
+}
+
+.button a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/*footer part */
+footer {
+    margin-top: 100px;
+    background-color: #33343E;
+    height: fit-content;
+    line-height: 35px;
+  }
+
+  .wrapper {
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .row1 ul,
+  .row2 ul,
+  .row3 ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  .row1 li,
+  .row2 li,
+  .row3 li {
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  #style-font {
+    font-family: 'Itim', cursive;
+  }
+
+  .row1 a,
+  .row2 a,
+  .row3 a {
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .wrapper a:hover {
+    padding-left: 10px;
+    color: #7EE8FA;
+    font-size: 20px;
+    border-left: 2px solid #EEC0C6;
+    margin-left: 0px;
+  }
+
+  .under {
+    text-align: center;
+    color: white;
+  }
+        </style>
+    </head>
+    <body>
+          <!--top-nav-->
+    <div class="top-container">
+      <div class="topnav">
+        <div class="left">
+          <a href="home.html" class="heading-link">
+            <h2>SEE & FEEL</h2>
+          </a>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <a href="package.html" class="active">Package</a>
+            </li>
+            <li>
+              <a href="car_page_1.html">Bus</a>
+            </li>
+            <li>
+              <a href="flight_page_1.html">Flights</a>
+            </li>
+            <li>
+              <a href="login.html" id="login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--topnav end-->
+
+
+        <div class="container">
+            <form class="form">
+                <label for="name">Full Name<span style="color: #800000;"> * </span></label><br>
+                <input type="text" name="name" id="name" required placeholder="Your name"><br>
+
+                <div class="gender">
+                <input type="radio" name="gender" required>
+                <label for="gender" style="font-size: 18px;">Male</label> 
+                <input type="radio" name="gender" required>
+                <label for="gender">Female <span style="color: #800000;"> * </span></label></div>
+
+                <label for="email" >Email <span style="color: #800000;"> * </span></label><br>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required><br>
+
+                <label for="phone" >Phone Number<span style="color: #800000;"> * </span></label><br>
+                <input type="tel" name="phone" id="phone" required  maxlength="12" pattern="09[0-9]{9}" size="20" placeholder="09940677854" onkeyup="noLetter(this)"
+                required oninvalid="setCustomValidity('Please enter a valid phone number.')" onchange="try{setCustomValidity('')}catch(e){}" ><br>
+                
+                
+                <label for="special">Your Trip IDEA (Optional)</label><br>
+                <textarea name="special" rows="4" id="special"></textarea>
+                <input type="submit" class="button" value="Book" formaction="package_confirmation.html" style="padding: 10px;">
+            </form>
+        </div>
+
+        
+  <footer>
+    <div class="wrapper">
+      <div class="row1">
+        <ul>
+          <li><a href="home.html">SEE & FEEL</a></li>
+
+          <li id="style-font">CONTACT</li>
+          <li>
+            <a href="tel:+959400408919"><i class="fa-solid fa-phone"> </i> &nbsp;09-400408919</a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps/place/See+and+Feel+Travels+%26+Tours/@16.8555921,96.120638,17z/data=!3m1!4b1!4m5!3m4!1s0x30c195177494b42b:0xc6235c23151f7118!8m2!3d16.8555863!4d96.1228266" target="_blank"><i
+                class="fa-solid fa-location-dot"> </i> &nbsp; Head Office</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row2">
+        <ul>
+          <li><a href="package.html">Package</a></li>
+          <li><a href="flight_page_1.html">Flight</a></li>
+          <li><a href="car_page_1.html">Bus</a></li>
+          <li> </li>
+        </ul>
+      </div>
+      <div class="row3">
+        <ul>
+          <li><a href="legal.html" class="effect">Legal</a></li>
+
+          <li><a href="terms.html" class="effect">Terms and Conditions</a></li>
+
+          <li><a href="privacy.html" class="effect">Privacy Policy</a></li>
+
+          <li> </li>
+        </ul>
+      </div>
+    </div> <br>
+    <div class="under"> <small>Copyright &copy; 2022 See & Feel </small></div>
+  </footer>
+
+  <script type="text/javascript">
+    
+function noNum(input)
+{   
+    var allow=/[^a-z]/gi;
+    input.value=input.value.replace(allow,"");
+}
+
+function noLetter(input)
+{
+    var accept=/[^0-9]/gi;
+    input.value=input.value.replace(accept, "");
+}
+  </script>
+
+    </body>
+</html>

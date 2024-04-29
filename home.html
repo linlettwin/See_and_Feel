@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  <script src="https://kit.fontawesome.com/094c1a5071.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /*top navigation bar*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+    .top-container {
+      width: 100%;
+      height: fit-content;
+      background-color: #33343E;
+      opacity: 1;
+      position: sticky;
+      top: 0px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+    }
+
+    .topnav {
+
+      width: 84%;
+      height: 50px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .topnav h2 {
+      font-family: 'Itim', cursive;
+      font-size: 25px;
+    }
+
+    .topnav .heading-link {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    /*change margin left*/
+    .topnav ul {
+      display: inline-block;
+      list-style-type: none;
+    }
+
+    .topnav li {
+      text-decoration: none;
+      display: inherit;
+      transition: 5s;
+      padding-bottom: 2px;
+
+    }
+
+    .topnav a {
+      font-family: 'Itim', cursive;
+      margin-left: 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+
+    .topnav a:hover {
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+      border-radius: 10px;
+    }
+
+    .topnav a.active {
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+      border-radius: 10px;
+    }
+
+    #login {
+      margin-left: 30px;
+    }
+
+    /*first part*/
+    .part1 {
+      background-image: url("image/background-city/use3.jpg");
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .box1 {
+
+      position: absolute;
+      width: 84%;
+      margin-left: 8%;
+      margin-top: 60px;
+    }
+
+    #head1 span {
+      margin-left: -7px;
+      font-size: 100px;
+      color: black;
+      letter-spacing: 15px;
+      line-height: 200px;
+
+    }
+
+    #head2 span {
+      margin-left: -7px;
+      font-size: 100px;
+      color: black;
+      margin-top: -30px;
+      letter-spacing: 20px;
+
+    }
+
+    .buttons {
+      margin-top: 50px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      border-radius: 40px;
+      font-family: 'Lato', sans-serif;
+      cursor: pointer;
+    }
+
+    .box {
+
+      background: #33343E;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      width: 285px;
+      height: fit-content;
+      padding: 15px 20px;
+      margin-right: 50px;
+      letter-spacing: 1px;
+    }
+
+    /*.box:hover{
+  color: black;
+  transition: .5s;
+}*/
+
+    .call {
+      width: 285px;
+      font-weight: 600;
+      font-size: 20px;
+      color: white;
+      padding: 11px 46px;
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(66, 66, 66, 0.9) 0%, rgba(62, 62, 62, 0.6) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      ;
+      backdrop-filter: blur(5px);
+      letter-spacing: 2px;
+    }
+
+    /*second part*/
+
+    .part2 {
+      width: 100%;
+      height: 140vh;
+    }
+
+    .box2 {
+      position: absolute;
+      width: 100%;
+      margin: auto;
+      height: 130vh;
+    }
+
+    #caption {
+      line-height: 60px;
+      padding-top: 60px;
+      width: 100%;
+      text-align: center;
+    }
+
+    #caption h1 {
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+    }
+
+    .title {
+      margin-left: 8%;
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 40px;
+      letter-spacing: 0.065em;
+    }
+
+    .less,
+    .more {
+      width: 35px;
+      height: 35px;
+      margin: 0px 5px 5px 0px;
+      border: 0;
+      border-radius: 5px;
+      background-color: rgb(0, 0, 0, 0.3);
+      box-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+    }
+
+    .less:hover {
+      background: #373847;
+    }
+
+    .more:hover {
+      background: #373847;
+    }
+
+    .less:hover i {
+      color: white;
+      opacity: 1;
+    }
+
+    .more:hover i {
+      color: white;
+      opacity: 1;
+    }
+
+
+    .slide {
+      float: right;
+      margin-right: 10%;
+      margin-bottom: 20px;
+
+    }
+
+    .package-container {
+      height: fit-content;
+      width: 86%;
+      clear: both;
+      display: flex;
+      justify-content: left;
+      overflow: auto;
+      margin: auto;
+      scroll-behavior: smooth;
+      padding-left: 35px;
+    }
+
+    .package {
+      height: fit-content;
+      min-width: 260px;
+      padding: 20px;
+      border-radius: 20px;
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(142, 142, 142, 0.483) 0%, rgba(125, 125, 125, 0.069) 100%);
+      background-color: #EEEEEE;
+      color: #171717;
+      /*     backdrop-filter: blur(4px); */
+      margin: 0px 80px 30px 0px;
+      cursor: pointer;
+      transition: 1s;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, .5);
+
+    }
+
+    .package-container::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+
+    .package-items {
+      width: 100%;
+    }
+
+    .package-items img {
+      width: 100%;
+      height: 180px;
+      border-radius: 15px;
+
+    }
+
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .place-day {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .place {
+      width: 75%;
+    }
+
+    .day {
+      width: 40%;
+      text-align: right;
+      font-size: 12px;
+    }
+
+    .book {
+      border-radius: 8px;
+      padding: 5px;
+      width: 70px;
+      font-size: 15px;
+      border: 0;
+      background: #212121;
+
+    }
+
+    .book:hover {
+      border: 2px solid rgb(100, 184, 207);
+    }
+
+
+    .book a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .cost-book {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+    }
+
+    /*suggested destination*/
+
+
+    .part3 {
+      width: 100%;
+      height: 120vh;
+      /*background-image: url("image/use2.jpg");*/
+      background-image: url("image/background-city/use2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .box3 {
+      position: absolute;
+      width: 84%;
+      margin-left: 95px;
+      margin-top: 100px;
+      height: 120vh;
+    }
+
+    #caption2 h1 {
+      font-size: 100px;
+      letter-spacing: 3px;
+      color: black;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    #caption2 p {
+      color: white;
+      font-size: 25px;
+      line-height: 50px;
+      letter-spacing: 2px;
+    }
+
+    .car-flight {
+
+      display: flex;
+    }
+
+    .car {
+      position: relative;
+      width: 150px;
+      background: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-right: 40px;
+    }
+
+    .car:hover {
+      background-color: lightblue;
+
+    }
+
+    .car-flight a {
+      color: black;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+
+
+
+
+    /*part3 end*/
+
+    .part4 {
+      width: 100%;
+      height: 120vh;
+      background: linear-gradient(102.24deg, #EEC0C6 0%, #7EE8FA 98.06%);
+    }
+
+    .box4 {
+      position: absolute;
+      width: 84%;
+      margin-left: 95px;
+      margin-top: 70px;
+      height: 120vh;
+    }
+
+    .part4 h2 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .customer-review {
+      display: flex;
+      ;
+      justify-content: center;
+
+    }
+
+    .review-box {
+      height: fit-content;
+      width: 700px;
+      display: flex;
+      justify-content: left;
+      scroll-behavior: smooth;
+      overflow: auto;
+    }
+
+    .review-box::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+
+    .review-content {
+      height: fit-content;
+      min-width: 550px;
+      opacity: 1;
+      border-radius: 20px;
+      margin-right: 80px;
+      margin-left: 80px;
+
+    }
+    .review-text{line-height:28px;}
+
+
+    .move-btn {
+      cursor: pointer;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-top: 220px;
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(255, 255, 255, 0.483) 0%, rgba(255, 255, 255, 0.069) 100%);
+      backdrop-filter: blur(4px);
+      opacity: 1;
+      border: none;
+
+    }
+
+    .move-btn:active {
+      transform: translateY(3px);
+    }
+
+    .move-btn i {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .swiper {
+      margin-left: 20px;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .swipe-button1,
+    .swipe-button3,
+    .swipe-button2 {
+      text-decoration: none;
+      background-color: #D9D9D9;
+      border-radius: 8px;
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+    }
+
+    .bt-black {
+      text-decoration: none;
+      background-color: #484848;
+      border-radius: 8px;
+      margin-right: 5px;
+      width: 25px;
+      height: 15px;
+    }
+
+    .user-img {
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      margin-left: 245px;
+    }
+
+    .review-text {
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(255, 255, 255, 0.483) 0%, rgba(255, 255, 255, 0.069) 100%);
+      backdrop-filter: blur(4px);
+      border-radius: 20px;
+      max-width: 320;
+      height: 240px;
+      margin-top: 20px;
+      padding: 35px;
+      text-align: center;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    span {
+      font-weight: bolder;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+
+    p {
+      font-weight: 800px;
+      font-size: 18px;
+      padding-top: 8px;
+    }
+
+    #cute {
+      width: 220px;
+      height: 220px;
+      margin-left: 10px;
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
+
+
+
+    .part5 {
+      width: 100%;
+      height: auto;
+    }
+
+
+
+    /* logos part */
+
+    .exp {
+      margin-top: 120px;
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-bottom: 120px;
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .inner-box {
+      width: 250px;
+      height: 320px;
+      margin: 0 10px;
+      transition: 1s;
+      background: white;
+      opacity: 1;
+      border-radius: 20px;
+      padding-top: 10px;
+      z-index: 3;
+      transition: 1.5s;
+      border: 1px solid black;
+    }
+
+
+
+    .circle {
+      display: inline-block;
+      border-radius: 50%;
+      background-color: rgb(236, 225, 225);
+      margin-left: 39%;
+      margin-top: 30px;
+      width: 70px;
+      height: 70px;
+      opacity: 1;
+    }
+
+    .inner-box p {
+      font-size: 18px;
+      padding: 10px 25px 20px 25px;
+      text-align: center;
+      color: black;
+      line-height: 35px;
+
+    }
+
+    .inner-box h6 {
+      font-size: 20px;
+      text-align: center;
+      padding: 15px 25px 0px 25px;
+    }
+
+    .size {
+      width: 40px;
+      height: 40px;
+      margin-top: 12px;
+      margin-left: 14px;
+    }
+
+
+    .part6 {
+      width: 100%;
+      height: auto;
+      background-color: #DADADA;
+    }
+
+    /*bank logo */
+    #bank-caption {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 900px;
+      padding-bottom: 80px;
+    }
+
+    .banks {
+      margin-top: 100px;
+
+    }
+
+    .bank-pic {
+      margin-left: 9px;
+      /*change*/
+      margin-right: 9px;
+      /*change*/
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .bank-pic img {
+
+      width: 130px;
+      height: 120px;
+      border-radius: 10px;
+    }
+
+    .bank-pic1 {
+      margin-top: 50px;
+      margin-left: 9px;
+      /*change*/
+      margin-right: 9px;
+      /*change*/
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .bank-pic1 img {
+
+      width: 130px;
+      height: 120px;
+      border-radius: 10px;
+    }
+
+
+    /* Car oprators logo */
+    .carlogo {
+      margin-top: 100px;
+      margin-left: 40px;
+    }
+
+    .carlogo h3 {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 25px;
+      font-weight: 900px;
+    }
+
+    .second_line img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      padding-right: 20px;
+    }
+
+    .second_line {
+      margin: 35px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 98px;
+      margin-right: 75px;
+      flex-wrap: wrap;
+
+    }
+
+    .second_line img {
+      width: 150px;
+      height: 80px;
+    }
+
+
+    /*footer part */
+    footer {
+      margin-top: 100px;
+      background-color: #33343E;
+      height: fit-content;
+      line-height: 35px;
+    }
+
+    .wrapper {
+      padding-top: 50px;
+      margin-left: 100px;
+      margin-right: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .row1 ul,
+    .row2 ul,
+    .row3 ul {
+      display: inline-block;
+      list-style-type: none;
+    }
+
+    .row1 li,
+    .row2 li,
+    .row3 li {
+      font-family: 'Itim', cursive;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    #style-font {
+      font-family: 'Itim', cursive;
+    }
+
+    .row1 a,
+    .row2 a,
+    .row3 a {
+      font-family: 'Itim', cursive;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .wrapper a:hover {
+      padding-left: 10px;
+      color: #7EE8FA;
+      font-size: 20px;
+      border-left: 2px solid #EEC0C6;
+      margin-left: 0px;
+    }
+
+    .under {
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-container">
+    <div class="topnav">
+      <div class="left">
+        <a href="home.html" class="heading-link">
+          <h2>SEE & FEEL</h2>
+        </a>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="package.html">Package</a>
+          </li>
+          <li>
+            <a href="car_page_1.html">Bus</a>
+          </li>
+          <li>
+            <a href="flight_page_1.html">Flights</a>
+          </li>
+          <li>
+            <a href="login.html" id="login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section>
+
+    <div class="part1">
+      <div class="box1">
+        <h1 id="head1" style="font-family: 'Archivo' , sans-serif; line-height: 109px;">
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">E</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">X</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">P</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">E</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">R</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">I</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">E</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">N</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">C</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">E</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100">.</span>
+
+        </h1>
+        <h1 id="head2" style="font-family: 'Archivo' , sans-serif;">
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100">S</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">h</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">a</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">r</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">e</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">d</span>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1700">.</span>
+
+        </h1>
+
+        <div class="buttons">
+          <a href="package.html" class="box" style="font-family: 'Lato' ;">See Our Packages</a>
+          <a href="tel:+959400408919" class="call" style="font-family: 'Lato' , sans-serif;">Call Now</a>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+
+
+    <div class="part2">
+      <div class="box2">
+        <div id="caption">
+          <h1>Find the people you will climb the mountain with</h1>
+          <h1>Find the friends to treks jungles with</h1>
+          <h1>Find your SEE & FEEL</h1>
+        </div>
+
+        <!--for package popular destination-->
+        <div class="content">
+          <div class="title">
+            <h2>Suggested<br>Destinations</h2>
+          </div><br><br>
+
+
+
+          <div class="package-container" id="popular">
+
+            <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+              <div class="package-items">
+                <img src="package_image/kyeik_hto.jpg" />
+                <h3>The Wonders of Myanmar</h3>
+                <div class="place-day">
+                  <p class="place">Yangon-Kyaik Hto</p>
+                  <p class="day">6Days ,5Night</p>
+                </div>
+                <div class="cost-book">
+                  <div>
+                    <p class="cost">$1150</p>
+                  </div>
+                  <button class="book"><a href="myan-wonders-intro.html">View</a></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="package " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+              <div class="package-items">
+                <img src="package_image/inlay.jpg" />
+                <h3>Myanmar highlights</h3>
+                <div class="place-day">
+                  <p class="place">Yangon-Inlay
+                  </p>
+                  <p class="day">6Days ,5Night</p>
+                </div>
+                <div class="cost-book">
+                  <div>
+                    <p class="cost">$1650</p>
+                  </div>
+                  <button class="book"><a href="myanmar-highlight-intro.html">View</a></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="package" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+              <div class="package-items">
+                <img src="package_image/nga_pa_li.jpg" />
+                <h3>Charming with Beaches</h3>
+                <div class="place-day">
+                  <p class="place">Yangon-Ngapali
+                  </p>
+                  <p class="day">8Days ,7Night</p>
+                </div>
+                <div class="cost-book">
+                  <div>
+                    <p class="cost">$1500</p>
+                  </div>
+                  <button class="book"><a href="beaches-intro.html">View</a></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="part3">
+      <div class="box3">
+        <div id="caption2">
+          <h1>Personal Trips</h1>
+          <p>Book Online Bus or Flight Tickets</p>
+          <p>Around Myanmar</p>
+        </div>
+        <div class="car-flight">
+          <a href="car_page_1.html">
+            <div class="car">
+              <i class="fa-solid fa-bus-simple" style="margin-right:10px;"></i>Bus
+            </div>
+          </a>
+          <div class="car">
+            <a href="flight_page_1.html"><i class="fa-solid fa-plane-departure "
+                style="margin-right:10px;"></i>Flight</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="inner-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <div class="circle">
+          <img src="image/other/bus.png" class="size" />
+        </div>
+        <h6>Let's Travel</h6>
+        <p>Go and see all you possibly can.Your dream travels is just a few
+          clicks away.</p>
+      </div>
+      <div class="inner-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+        <div class="circle">
+          <img src="image/other/give-money.png" class="size" />
+        </div>
+        <h6>Instant Booking</h6>
+        <p>Book your trip in less than 5 min.Instant confirmation after payment.</p>
+      </div>
+      <div class="inner-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+        <div class="circle">
+          <img src="image/other/support.png" class="size" />
+
+        </div>
+        <h6>Support</h6>
+        <p>Available anytime for any questions you have about our travel package.</p>
+      </div>
+    </div>
+
+    <div class="part4">
+      <div class="box4">
+        <h2>What our customers Says About Us</h2>
+        <div class="customer-review">
+          <button class="move-btn" onClick="scrolll()">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="review-box" id="review">
+            <div class="review-content">
+              <img src="image/review/AMM.jpg" class="user-img">
+
+              <div class="review-text">
+                Phenomenal service. The ease of booking with travel online was fantastic. The when everything is booked,
+                great communication and they delivered exactly what they said they would and more.
+                Thank you See and Feel, I will book through your company again and again<br>
+                <div class="name" style="margin-top:15px;">
+                  <br><span>Aung Myint Myat</span>
+                  <p>Ka Yee Twr Yin A Chit Shr Thu Lay</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <img src="image/review/WMO(1).jpg" class="user-img">
+
+              <div class="review-text">
+                Never used See and Feel before and was most impressed with the quick and efficient service from booking
+                on line, receiving the confirmation
+                and follow ups - overall excellent service. Would not hesitate to use again for future bookings.<br>
+                <div class="name" style="margin-top:30px;">
+                  <br><span>Waing Maw Oo</span>
+                  <p>Main Ma Twe Ma Kg Buu</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="review-content">
+              <img src="image/review/YNL.jpg" class="user-img">
+
+              <div class="review-text">
+                See & Feel booking system is very easy to navigate.And we received all vouchers in time and all our
+                bookings went smoothly with no hiccups.
+                The experience was great in doing everything online.Fantastic service.
+                <div class="name" style="margin-top:30px;">
+                  <br><span>Yan Naing Lin</span>
+                  <p>Meets on Whatsapp</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="move-btn" onClick="scrollr()">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="part5">
+
+      <div class="banks">
+        <h3 id="bank-caption">We accept</h3>
+        <div class="bank-pic" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <img src="image/payment/kbzpay.jpg" class="bord">
+          <img src="image/payment/wave-money.jpg" class="bord">
+          <img src="image/payment/cbpay.png" class="bord">
+          <img src="image/payment/ayapay.png" class="bord">
+        </div>
+
+        <div class="bank-pic1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <img src="image/payment/yoma.jpg" class="bord">
+          <img src="image/payment/agd.jpg" class="bord">
+          <img src="image/payment/mpt_pay.png" class="bord">
+          <img src="image/payment/uab_pay.jpg" class="bord">
+        </div>
+      </div>
+
+
+      <div class="carlogo">
+        <h3>Our Operators</h3>
+      </div>
+      <div class="second_line" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="image/bus/elite.png">
+        <img src="image/bus/SSS.png">
+        <img src="image/bus/jj.png">
+        <img src="image/bus/mandalarmin.png" />
+      </div>
+      <div class="second_line" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="image/air/AirKBZ.png">
+        <img src="image/air/mna.png">
+        <img src="image/air/myan.png">
+        <img src="image/air/golden.png">
+      </div>
+    </div>
+
+
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="row1">
+        <ul>
+          <li><a href="#">SEE & FEEL</a></li>
+
+          <li id="style-font">CONTACT</li>
+          <li>
+            <a href="tel:+959400408919"><i class="fa-solid fa-phone"> </i> &nbsp;09-400408919</a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/place/See+and+Feel+Travels+%26+Tours/@16.8555921,96.120638,17z/data=!3m1!4b1!4m5!3m4!1s0x30c195177494b42b:0xc6235c23151f7118!8m2!3d16.8555863!4d96.1228266"
+              target="_blank"><i class="fa-solid fa-location-dot"> </i> &nbsp; Head Office</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row2">
+        <ul>
+          <li><a href="package.html">Package</a></li>
+          <li><a href="flight_page_1.html">Flight</a></li>
+          <li><a href="car_page_1.html">Bus</a></li>
+          <li> </li>
+        </ul>
+      </div>
+      <div class="row3">
+        <ul>
+          <li><a href="legal.html" class="effect">Legal</a></li>
+
+          <li><a href="terms.html" class="effect">Terms and Conditions</a></li>
+
+          <li><a href="privacy.html" class="effect">Privacy Policy</a></li>
+
+          <li> </li>
+        </ul>
+      </div>
+    </div> <br>
+    <div class="under"> <small>Copyright &copy; 2022 See & Feel </small></div>
+  </footer>
+
+  <!--javascript parts-->
+  </script>
+  <script type="text/javascript">
+    var btn = document.getElementById('btn')
+
+    function leftClick() {
+      btn.style.left = '0'
+    }
+
+    function rightClick() {
+      btn.style.left = '150px'
+    }
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--for review scroll-->
+  <script type="text/javascript">
+    let space1 = -710;
+    let space2 = 710;
+    function scrolll() {
+      var left = document.querySelector("#review");
+      left.scrollBy(space1, 0)
+
+    }
+    function scrollr() {
+      var right = document.querySelector("#review");
+      right.scrollBy(space2, 0)
+
+    }
+  </script>
+
+
+</body>
+
+</html>

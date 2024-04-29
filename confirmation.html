@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Booking Car Ticket</title>
+    <script src="https://kit.fontawesome.com/094c1a5071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="confirmation.css" />
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    
+}
+
+body{
+    background: linear-gradient(102.24deg, #EEC0C6 0%, #7EE8FA 98.06%);
+}
+/*top navigation bar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+.top-container {
+    width: 100%;
+    height: fit-content;
+    background-color:#33343E;
+    opacity: 1;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  
+  .topnav {
+   
+    width: 84%;
+    height:50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .topnav h2 {
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+  }
+  
+  .topnav .heading-link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*change margin left*/
+  .topnav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .topnav li {
+    text-decoration: none;
+    display: inherit;
+    transition: 5s;
+    padding-bottom: 2px;
+
+  }
+  
+  .topnav a {
+    font-family: 'Itim', cursive;
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px 15px;
+  }
+  
+  
+  .topnav a:hover {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius:10px;
+  }
+  
+  .topnav a.active {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius:10px;
+  }
+  #login{
+    margin-left:30px;
+  }
+
+.container{
+    margin-top:160px;
+    display:flex;
+    justify-content:center;
+}
+
+.upper{
+    background-color:rgba(255,255,255,0.3);
+    backdrop-filter: blur(12px);
+    width:350px;
+    height:170px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    text-align:center;
+    line-height:30px;
+   
+}
+.lower{
+    width:350px;
+    height:90px;
+    background-color:#2B2B2B;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    text-align:center;
+    line-height:30px;
+}
+
+.upper h2{color:black; font-size:25px; padding-top:40px;}
+.upper p{
+    color:black; 
+    font-size:18px; 
+    margin-top:10px;
+    opacity:0.4;} 
+
+.lower p{color:white; padding-top:15px; font-size:18px;}
+.button{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+#but{
+    padding:7px 12px;
+    color:white;
+    background-color:#2B2B2B;
+    border-radius:10px;
+    font-size:18px;
+}
+a{text-decoration:none;}
+.place {position:absolute; width:150px; height:150px; opacity:0.5; }
+#img1 {margin-top:80px; margin-left:150px; transform: rotate(-20deg);}
+#img2{margin-top:-50px; margin-left:980px; transform: rotate(-20deg);}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="bg-image">
+            <div class="top-container">
+                <div class="topnav">
+                  <div class="left">
+                    <a href="home.html" class="heading-link">
+                      <h2>SEE & FEEL</h2>
+                    </a>
+                  </div>
+                  <div class="right">
+                    <ul>
+                      <li>
+                        <a href="package.html">Package</a>
+                      </li>
+                      <li>
+                        <a href="car_page_1.html">Bus</a>
+                      </li>
+                      <li>
+                        <a href="flight_page_1.html">Flights</a>
+                      </li>
+                      <li>
+                        <a href="login.html" id="login">Login</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            
+            <img src="image/other/ticket.png" id="img1" class="place">
+    <div class="container">
+        <div class="box">
+            <div class="upper">
+               <h2>Payment Information<br> confirmed</h2>
+               <p>Thanks for choosing us</p>
+            </div>
+            <div class="lower">
+                <p>Your ticket have already sent <br>to your email </p>
+            </div>
+        </div> 
+    </div>
+    <div class="button">
+        <a href="home.html"><div id="but">Go back home</div></a> 
+    </div>  
+    <img src="image/other/ticket.png" id="img2" class="place">
+</body>
+</html>

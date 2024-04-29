@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Booking Car Ticket</title>
+    <script src="https://kit.fontawesome.com/094c1a5071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="car_step_3.css" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+/*top navigation bar*/
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+.top-container {
+    width: 100%;
+    height: fit-content;
+    background-color:#33343E;
+    opacity: 1;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  
+  .topnav {
+   
+    width: 84%;
+    height:50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .topnav h2 {
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+  }
+  
+  .topnav .heading-link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*change margin left*/
+  .topnav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .topnav li {
+    text-decoration: none;
+    display: inherit;
+    transition: 5s;
+    padding-bottom: 2px;
+
+  }
+  
+  .topnav a {
+    font-family: 'Itim', cursive;
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px 15px;
+  }
+  
+  
+  .topnav a:hover {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius:10px;
+  }
+  
+  .topnav a.active {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius:10px;
+  }
+  #login{
+    margin-left:30px;
+  }
+
+
+
+
+.container {
+    margin-top:-20px;
+    padding-top:20px;
+    background: linear-gradient(180deg, #D7E1EC 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/*progress-bar*/
+
+.progress-bar{
+    display:flex;
+    margin-top:20px;
+    margin-left:-3px;
+}
+
+.step{
+    text-align:center;
+    width:100%;
+}
+
+.step p{
+    font-size:19px;
+    color:#000;
+    margin-bottom:8px;
+}
+
+    .step .bullet:before,
+    .step .bullet:after {
+        position: absolute;
+        content: ' ';
+        bottom: 11px;
+        right:30px;
+        height:4px;
+        width: 280px;
+        background: #D9D9D9;
+    }
+    #nothing:before, 
+    #nothing:after{
+        display:none;
+    }
+
+    .bullet.two:after{
+        background-color:#0BCE07;
+    }
+
+    .bullet.three:after {
+    background-color:#0BCE07;
+    }
+
+.nothing :before + .nothing:after{
+    display:none;
+}
+
+.step .bullet{
+    position:relative;
+    height:25px;
+    width:25px;
+    border:1px solid #000;
+    display:inline-block;
+    background-color:#0BCE07;
+    border-radius:50%;
+}
+#four{background-color:#D9D9D9;}
+.step span{
+    font-size:19px;
+    padding:2px;
+    line-height:25px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+    .step .check {
+        display: none;
+    }
+ 
+.step a{text-decoration:none; color:black;}
+/*main*/
+.middle {
+    margin-top: 50px;
+    margin-left:99px;
+    margin-right:102px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+/*booking info part*/
+.booking form {
+    border: 1px solid black;
+    width: 450px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.booking h3 {
+    text-align:center;
+    font-size:23px;
+    margin-top: 0px;
+    padding: 15px;
+}
+
+.booking p {
+    border-bottom: dashed;
+}
+
+.booking label {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight:500px;
+}
+
+.booking input {
+    float: right;
+    margin-right: 30px;
+    width: 180px;
+    height: 23px;
+}
+
+#subtotal,#cost {
+    color: #0BCE07;
+    font-size:25px;
+    font-weight:500px;
+}
+
+#seat, #num {
+    width: 50px;
+    height: 30px;
+    margin-right: 160px;
+}
+
+/*output box*/
+.booking output {
+    float: right;
+    margin-right: 30px;
+    width: 180px;
+    height: 23px;
+    font-weight:bolder;
+}
+
+
+/*payment*/
+.payment{
+    margin-top:2px;
+    display:flex;
+    flex-direction:column;
+}
+
+.pay1 {
+    padding:10px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    height: 60px;
+    width: 525px;
+    
+}
+
+    .pay1 h3 {
+        color: black;
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+.pay1 img {
+
+        border-radius:5px;
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+
+
+.pay2 {
+    padding:10px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    height: 55px;
+    width: 525px;
+    margin-top: 20px;
+}
+
+    .pay2 h3 {
+        color: black;
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    .pay2 img {
+        border-radius:5px;
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+.pay3 {
+    padding:10px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    height: 60px;
+    width: 525px;
+    margin-top:20px;
+}
+
+    .pay3 h3 {
+        color: black;
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .pay3 img {
+        border-radius:5px;
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+ .pay4 {
+    padding:10px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    height: 60px;
+    width: 525px;
+    margin-top:20px;
+    
+}
+
+    .pay4 h3 {
+        color: black;
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .pay4 img {
+        border-radius:5px;
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+/*footer part */
+footer {
+    margin-top: 100px;
+    background-color: #33343E;
+    height:fit-content;
+    line-height: 35px;
+  }
+  
+  .wrapper {
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .row1 ul,
+  .row2 ul,
+  .row3 ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .row1 li,
+  .row2 li,
+  .row3 li {
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  #style-font{font-family: 'Itim', cursive;}
+  
+  .row1 a,
+  .row2 a,
+  .row3 a {
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .wrapper a:hover {
+    padding-left: 10px;
+    color: #7EE8FA;
+    font-size: 20px;
+    border-left: 2px solid #EEC0C6;
+    margin-left: 0px;
+  }
+  
+  .under {
+    text-align: center;
+    color: white;
+  }
+    </style>
+    
+</head>
+<body>
+    <div class="top-container">
+        <div class="topnav">
+          <div class="left">
+            <a href="home.html" class="heading-link">
+              <h2>SEE & FEEL</h2>
+            </a>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <a href="package.html">Package</a>
+              </li>
+              <li>
+                <a href="car_page_1.html" class="active">Bus</a>
+              </li>
+              <li>
+                <a href="flight_page_1.html">Flights</a>
+              </li>
+              <li>
+                <a href="login.html" id="login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="progress-bar">
+            <div class="step">
+                <p>Seat Selection</p>
+                <div class="bullet" id="nothing">
+                    <span> <i class="fa-solid fa-check"> </i></span>
+                </div>
+                <div class="check">  </div>
+            </div>
+
+            <div class="step">
+                <p>Traveller Info</p>
+                <div class="bullet two">
+                   <a href="car_step_2.html"> <span> <i class="fa-solid fa-check"> </i></span> </a>
+                </div>
+                <div class="check">  </div>
+            </div>
+
+            <div class="step">
+                <p>Payment</p>
+                <div class="bullet three">
+                   <span>3</span>
+                </div>
+                <div class="check">  </div>
+            </div>
+
+            <div class="step">
+                <p>Confirmation</p>
+                <div class="bullet" id="four">
+                    <span>4</span>
+                </div>
+                <div class="check">  </div>
+            </div>
+
+        </div>
+
+        <div class="middle">
+            <div class="payment">
+                <a href="kbzpay.html">
+                    <div class="pay1">
+                     <img src="image/payment/kpay.jpg" />
+                     <h3>KBZ Pay</h3>
+                    </div>
+                </a>
+                <a href="wavepay.html">
+                    <div class="pay2">
+                      <img src="image/payment/wave-money.jpg" />
+                      <h3>Wave Pay</h3>
+                    </div>
+                </a>
+                <a href="cbpay.html">
+                    <div class="pay3">
+                       <img src="image/payment/cbpay.png" />
+                       <h3>CB Pay</h3>
+                    </div>
+                </a>
+                <a href="ayapay.html">
+                    <div class="pay4">
+                      <img src="image/payment/ayapay.png" />
+                      <h3>AYA Pay</h3>
+                    </div> 
+                </a>
+                <a href="yoma.html">
+                    <div class="pay4">
+                      <img src="image/payment/yoma.jpg" />
+                      <h3>Yoma Bank</h3>
+                    </div> 
+                </a>
+                <a href="agd_pay.html">
+                    <div class="pay4">
+                      <img src="image/payment/agd.jpg" />
+                      <h3>AGD Bank</h3>
+                    </div> 
+                </a>
+                <a href="mpt_pay.html">
+                    <div class="pay4">
+                      <img src="image/payment/mpt_pay.png" />
+                      <h3>MPT Pay</h3>
+                    </div> 
+                </a>
+                <a href="uab_pay.html">
+                    <div class="pay4">
+                      <img src="image/payment/uab_pay.jpg" />
+                      <h3>UAB Pay</h3>
+                    </div> 
+                </a>
+            </div>
+            <div class="booking">
+                <form>
+                    <h3>Booking Summary</h3>
+                    <hr /><br />
+                    <label>Bus Operator</label>
+                    <output name="bus" id="bus">Mandalar Min Express</output> <br><br>
+                    <label>Route</label>
+                    <output name="route" id="route">Ygn-Mdy</output> <br><br>
+                    <label>Departure Time</label>
+                    <output name="ddate" id="ddate">Jul 19, 7:00 A.M</output><br> <br>
+                    <label>Arrival Time</label>
+                    <output name="adate" id="adate">Jul 19, 6:00 P.M</output><br> <br>
+                    <p> </p><br />
+                    <label>Number of Seat</label>
+                    <output name="seat" id="seat">2</output><br><br>
+                    <label>Seat Number</label>
+                    <output name="num" id="num">22</output><br><br>
+                    <p> </p><br />
+                    <label id="subtotal">Subtotal</label>
+                    <output name="cost" id="cost">25,000 MMK</output>
+                </form>
+            </div>
+        </div>
+       
+
+    </div>
+
+
+    <footer>
+      <div class="wrapper">
+        <div class="row1">
+          <ul>
+            <li><a href="home.html">SEE & FEEL</a></li>
+  
+            <li>CONTACT</li>
+            <li>
+              <a href="tel:+959400408919"><i class="fa-solid fa-phone"> </i> &nbsp;09-400408919</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/See+and+Feel+Travels+%26+Tours/@16.8555921,96.120638,17z/data=!3m1!4b1!4m5!3m4!1s0x30c195177494b42b:0xc6235c23151f7118!8m2!3d16.8555863!4d96.1228266" target="_blank"
+              ><i class="fa-solid fa-location-dot"> </i> &nbsp; Head Office</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row2">
+          <ul>
+            <li><a href="package.html">Package</a></li>
+            <li><a href="flight_page_1.html">Flight</a></li>
+            <li><a href="car_page_1.html">Bus</a></li>
+            <li> </li>
+          </ul>
+        </div>
+        <div class="row3">
+          <ul>
+            <li><a href="legal.html" class="effect">Legal</a></li>
+  
+            <li><a href="terms.html" class="effect">Terms and Conditions</a></li>
+  
+            <li><a href="privacy.html" class="effect">Privacy Policy</a></li>
+  
+            <li> </li>
+          </ul>
+        </div>
+      </div> <br>
+      <div class="under"> <small>Copyright &copy; 2022 See & Feel </small></div>
+    </footer>
+</body>
+</html>

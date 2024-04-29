@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Car Page 2</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/094c1a5071.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="cartest.css" />
+
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .see {
+    background: linear-gradient(102.24deg, #EEC0C6 0%, #7EE8FA 98.06%);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /*top navigation bar*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+  .top-container {
+    width: 100%;
+    height: fit-content;
+    background-color: #33343E;
+    opacity: 1;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .topnav {
+
+    width: 84%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .topnav h2 {
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+  }
+
+  .topnav .heading-link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*change margin left*/
+  .topnav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  .topnav li {
+    text-decoration: none;
+    display: inherit;
+    transition: 5s;
+    padding-bottom: 2px;
+
+  }
+
+  .topnav a {
+    font-family: 'Itim', cursive;
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+
+
+  .topnav a:hover {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius: 10px;
+  }
+
+  .topnav a.active {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius: 10px;
+  }
+
+  #login {
+    margin-left: 30px;
+  }
+
+  /*topnav end*/
+
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    
+  }
+
+  .content-search {
+    width: 84%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .content-search-items{
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    border-radius: 10px;
+    outline: 0;
+    
+  }
+
+  .set-goal .to,.from{
+    border: 0;
+    outline: 0;
+    text-align: center;
+  }
+
+  .content-search-items .date{
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    outline: 0;
+  }
+
+
+
+
+
+  .dn-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    border-radius: 10px;
+    outline: 0;
+  }
+
+  .dn-box {
+    background: white;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    position: relative;
+    text-align: center;
+
+  }
+
+  .dn-btn {
+    position: relative;
+    font-size: 22px;
+    margin: 0;
+    outline: 0;
+    border-radius: 10px;
+    border: 0;
+    height: 50px;
+    background: transparent;
+    width: 70px;
+  }
+
+  #btn {
+    left: 0;
+    top: 0;
+    width: 74px;
+    height: 100%;
+    background-color: lightblue;
+    position: absolute;
+    border-radius: 10px;
+    transition: .5s;
+  }
+
+  .seat{
+    width: fit-content;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    border-radius: 10px;
+    outline: 0;
+  }
+  
+  .seat button{
+    padding: 7px 10px;
+    font-size: 30px;
+    background-color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+  }
+
+  .seat p{
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .seat button:hover{
+    background-color: lightblue;
+    color: white;
+  }
+
+  
+
+
+
+  /*.button-box{
+  width: 110px;
+  background: #fff;
+  border-radius: 30px;
+  position:relative;
+  border: 1px solid;
+}
+
+.toggle-btn{
+  padding: 5px 10px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  position:relative;
+  border: 0;
+  text-align: center;
+}
+
+#btn{
+  top: 0;
+  left: 0;
+  background: orange;
+  border-radius: 30px;
+  width: 55px;
+  height: 100%;
+  position: absolute;
+  transition: .5s;
+}*/
+
+  .search-btn {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    font-size: 17px;
+    border: 0;
+    outline: 0;
+    align-content: center;
+  }
+
+  .search-btn img {
+    width: 10px;
+    
+  }
+
+  .search-btn:active {
+    transform: translateY(3px);
+  }
+
+  .operator-container {
+    width: 84%;
+    margin: auto;
+  }
+
+  .operator {
+
+    background: linear-gradient(102.24deg, #EEC0C6 0%, #7EE8FA 98.06%);
+    display: flex;
+
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .bus-operator {
+    
+    float: left;
+    min-width: 230px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255, .5);
+    padding: 10px;
+    border: 0;
+    height: fit-content;
+
+  }
+
+  .bus-operator-items {
+    padding: 5px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .bus-operator-names {
+    margin-left: 15%;
+    font-size: 20px;
+  }
+
+  .bus-operator-items h3 {
+    text-align: center;
+  }
+
+  .bus-ticket {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255, .5);
+    border: 0;
+    margin-right: 8%;
+  }
+
+  .bus-ticket-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .bus-ticket p {
+    font-size: 20px;
+  }
+
+  .goal {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .goal p {
+    display: flex;
+    align-items: center;
+  }
+
+  .goal img {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .select {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(100, 184, 207);
+    padding: 10px;
+    margin-top: 10px;
+    border: 0;
+    text-align: center;
+  }
+
+  .select:active {
+    transform: translateY(3px);
+  }
+
+  .select a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .select a:hover {
+    color: white;
+    transform: translateY(3px);
+  }
+
+  .see-more {
+    margin: auto;
+  }
+
+  .see-more a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .see-more a:hover {
+    color: red;
+  }
+
+      /*footer part */
+      footer {
+        margin-top: 300px;
+        background-color: #33343E;
+        height: fit-content;
+        line-height: 35px;
+      }
+  
+      .wrapper {
+        padding-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+  
+      .row1 ul,
+      .row2 ul,
+      .row3 ul {
+        display: inline-block;
+        list-style-type: none;
+      }
+  
+      .row1 li,
+      .row2 li,
+      .row3 li {
+        font-family: 'Itim', cursive;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+  
+      #style-font {
+        font-family: 'Itim', cursive;
+      }
+  
+      .row1 a,
+      .row2 a,
+      .row3 a {
+        font-family: 'Itim', cursive;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+  
+      .wrapper a:hover {
+        padding-left: 10px;
+        color: #7EE8FA;
+        font-size: 20px;
+        border-left: 2px solid #EEC0C6;
+        margin-left: 0px;
+      }
+  
+      .under {
+        text-align: center;
+        color: white;
+      }
+
+  </style>
+</head>
+
+<body>
+  <div class="see">
+    <!--top-nav-->
+    <div class="top-container">
+      <div class="topnav">
+        <div class="left">
+          <a href="home.html" class="heading-link">
+            <h2>SEE & FEEL</h2>
+          </a>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <a href="package.html">Package</a>
+            </li>
+            <li>
+              <a href="car_page_1.html" class="active">Bus</a>
+            </li>
+            <li>
+              <a href="flight_page_1.html">Flights</a>
+            </li>
+            <li>
+              <a href="login.html" id="login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--topnav end-->
+
+    <form>
+      <div class="content-container">
+        <div class="content-search">
+
+          <div class="content-search-items">
+
+            <div class="set-goal">
+              <select name="from" class="from" style="font-size: 20px; border: 0;">
+                <option value="Yangon">Yangon</option>
+                <option value="Nandalay">Mandalay</option>
+                <option value="Bagan">Bagan</option>
+                <option value="Dawei">Dawei</option>
+                <option value="Myingyan">Myingyan</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="content-search-items">
+            <div class="set-goal">
+              <select name="to" class="to" id="to" style="font-size: 20px; border: 0;">
+                <option value="">Mandalay</option>
+                <option value="">Yangon</option>
+                <option value="">Bagan</option>
+                <option value="">Dawei</option>
+                <option value="">Myingyan</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="content-search-items">
+            <input type="date" name="date" class="date">
+          </div>
+          
+          
+            <div class="seat">
+                <form >
+                <button type="button" name="minus" style="padding: 7px 13px; ">-</button>
+                <p type="button" name="number">1 Seat</p>
+                <button type="button" name="plus" >+</button>
+                </form>
+            </div>
+          
+          
+          <!--<div class="content-search-items">
+                        <div class="form-box">
+                            <div class="button-box">
+                                <div id="btn"></div>
+                                <button type="button" class="toggle-btn">Day</button>
+                                <button type="button" class="toggle-btn">Night</button>
+                            </div>
+                        </div>
+                    </div>-->
+         <div  class="dn-container" >
+          
+            <div class="dn-box">
+              <div id="btn"></div>
+              <button type="button" class="dn-btn" onclick="leftClick()">Day</button>
+              <button type="button" class="dn-btn" onclick="rightClick()">Night</button>
+            </div>
+          
+        </div> 
+        
+
+          <div class="content-search-items">
+            <button type="button" class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <p>Search</p>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!--content menu end-->
+
+      <div class="operator-container">
+        <div class="operator">
+          <div class="bus-operator">
+            <div class="bus-operator-items">
+              <h3>Bus Operators</h3>
+            </div>
+            <div class="bus-operator-names">
+              <input type="radio" name="operators" id="all">
+              <label for="operators">All operators</label><br><br>
+
+              <input type="radio" name="operators" id="ok">
+              <label for="operators">JJ</label><br><br>
+
+              <input type="radio" name="operators" id="sm">
+              <label for="sm">Shwe Sin Sat Kyr</label><br><br>
+
+              <input type="radio" name="operators" id="mm">
+              <label for="mm">MandalarMin</label><br><br>
+
+              <input type="radio" name="operators" idel>
+              <label for="el">Elite</label><br><br>
+
+            </div>
+            <!--<div class="filter-btn">
+              <button type="button" class="filter">Filter</button>
+            </div>-->
+
+          </div>
+    </form>
+    <div class="bus-ticket-container">
+
+      <!--yangon-->
+      <div class="yangon">
+
+        <!--Yangon to Mandalay-->
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">06:00</span> <span id="dn">A.M</span> <span
+                style="font-size: 15px; color: rgb(145, 140, 140);">
+                Arrives :
+                05:00 P.M
+              </span><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Mandalay</p>
+              <img src="image/bus logo/elite.png " style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 25,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 25,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">06:00</span> <span id="dn">P.M</span> <span
+                style="font-size: 15px; color: rgb(145, 140, 140);">
+                Arrives : 05:00 A.M
+              </span><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Mandalay</p>
+              <img src="image/bus logo/jj.png " style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 25,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 25,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+
+
+        <!--Yangon to Bagan -->
+
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">07:00</span> <span id="dn">A.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 01:00
+                P.M
+              </span><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Bagan</p>
+              <img src="image/bus logo/mandalarmin.png " style="width: 160px; height: 60px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 24,500<br><span style="font-size: 15px; opacity:0.6 ">1seat x 24,500</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">01:00</span> <span id="dn">P.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 07:00
+                P.M
+              </span><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Bagan</p>
+              <img src="image/bus logo/shwesin.png  " style="width: 160px; height: 60px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 24,500<br><span style="font-size: 15px; opacity:0.6 ">1seat x 24,500</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <!--Yangon to Naypyiaw-->
+
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">08:00</span> <span id="dn">A.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives :
+                01:00 P.M
+              </span><br><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Nay Pyi Taw </p>
+              <img src="image/bus logo/jj.png" style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 30,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 30,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">01:00</span> <span id="dn">P.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 06:00
+                P.M
+              </span><br><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Nay Pyi Taw</p>
+              <img src="image/bus logo/elite.png" style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 30,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 30,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <!--Yangon to Pyin Oo lwin-->
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">06:00</span> <span id="dn">A.M</span> <span
+                style="font-size: 15px; color: rgb(145, 140, 140);">
+                Arrives :
+                05:00 P.M
+              </span><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Pyin Oo Lwin</p>
+              <img src="image/bus logo/mandalarmin.png " style="width: 160px; height: 60px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 25,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 25,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">06:00</span> <span id="dn">P.M</span> <span
+                style="font-size: 15px; color: rgb(145, 140, 140);">
+                Arrives :
+                05:00 A.M
+              </span><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Pyin Oo Lwin</p>
+              <img src="image/bus logo/jj.png " style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 25,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 25,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <!--Yangon to Taunggyi-->
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">06:00</span> <span id="dn">A.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 01:00
+                P.M
+              </span><br><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Taunggyi</p>
+              <img src="image/bus logo/elite.png" style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 30,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 30,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">01:00</span> <span id="dn">P.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 06:00
+                P.M
+              </span><br><br>
+            <div class="goal">
+              <p>Yangon</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Taunggyi</p>
+              <img src="image/bus logo/mandalarmin.png" style="width: 160px; height: 60px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 30,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 30,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+      </div>
+      <!--yangon-->
+
+
+      <!--mandalay-->
+      <div class="mandalay">
+
+        <!--Mandalay to Yangon-->
+
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">06:00</span> <span id="dn">A.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 05:00
+                P.M
+              </span><br>
+            <div class="goal">
+              <p>Mandalay</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Yangon</p>
+              <img src="image/bus logo/shwesin.png" style="width: 160px; height: 60px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 25,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 25,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">05:00</span> <span id="dn">P.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 06:00 A.M
+              </span><br>
+            <div class="goal">
+              <p>Mandalay</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Yangon</p>
+              <img src="image/bus logo/elite.png" style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 25,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 25,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <!--Mandalay to Taunggyi-->
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">09:00</span> <span id="dn">A.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 01:00
+                P.M
+              </span><br>
+            <div class="goal">
+              <p>Mandalay</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Taunggyi</p>
+              <img src="image/bus logo/jj.png " style="width: 180px; height: 80px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 20,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 20,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+
+        <div class="bus-ticket">
+          <div class="ticket-info">
+            <p>
+              <span id="time">01:00</span> <span id="dn">P.M</span> <span style="font-size: 15px; opacity:0.6;">
+                Arrives : 05:00
+                P.M
+              </span><br>
+            <div class="goal">
+              <p>Mandalay</p>
+              <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+              <p>Taunggyi</p>
+              <img src="image/bus logo/shwesin.png " style="width: 160px; height: 60px;">
+            </div>
+            </p>
+          </div>
+          <div class="ticket-cost">
+            <p>MMK 20,000<br><span style="font-size: 15px; opacity:0.6 ">1seat x 20,000</span> </p>
+            <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+          </div>
+        </div>
+        <!--mandalay-->
+
+        <!--Taunggyi-->
+        <div class="taunggyi">
+
+          <!--Taunggyi to Yangon-->
+          <div class="bus-ticket">
+            <div class="ticket-info">
+              <p>
+                <span id="time">06:00</span> <span id="dn">A.M</span><span style="font-size: 15px; opacity:0.6;">
+                  Arrives : 01:00
+                  P.M
+                </span><br><br>
+              <div class="goal">
+                <p>Taungyi</p>
+                <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+                <p>Yangon</p>
+                <img src="image/bus logo/shwesin.png" style="width: 160px; height: 60px;">
+              </div>
+
+              </p>
+            </div>
+            <div class="ticket-cost">
+              <p>MMK 24,500<br><span style="font-size: 15px; opacity:0.6 ">1seat x 24,500</span> </p>
+              <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+            </div>
+          </div>
+
+          <div class="bus-ticket">
+            <div class="ticket-info">
+              <p>
+                <span id="time">01:00</span> <span id="dn">P.M</span><span style="font-size: 15px; opacity:0.6;">
+                  Arrives : 06:00
+                  P.M
+                </span><br><br>
+              <div class="goal">
+                <p>Taungyi</p>
+                <i class="fa-solid fa-van-shuttle" style="width: 40px; height: 40px; margin-top: 33px;"></i>
+                <p>Yangon</p>
+                <img src="image/bus logo/mandalarmin.png" style="width: 160px; height: 60px;">
+              </div>
+
+              </p>
+            </div>
+            <div class="ticket-cost">
+              <p>MMK 24,500<br><span style="font-size: 15px; opacity:0.6 ">1seat x 24,500</span> </p>
+              <div class="select"><a href="car_step_1.html">Select Seats</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Bus operator end-->
+
+  <footer>
+    <div class="wrapper">
+      <div class="row1">
+        <ul>
+          <li><a href="home.html">SEE & FEEL</a></li>
+
+          <li id="style-font">CONTACT</li>
+          <li>
+            <a href="tel:+959400408919"><i class="fa-solid fa-phone"> </i> &nbsp;09-400408919</a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps/place/See+and+Feel+Travels+%26+Tours/@16.8555921,96.120638,17z/data=!3m1!4b1!4m5!3m4!1s0x30c195177494b42b:0xc6235c23151f7118!8m2!3d16.8555863!4d96.1228266" target="_blank"><i
+                class="fa-solid fa-location-dot"> </i> &nbsp; Head Office</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row2">
+        <ul>
+          <li><a href="package.html">Package</a></li>
+          <li><a href="flight_page_1.html">Flight</a></li>
+          <li><a href="car_page_1.html">Bus</a></li>
+          <li> </li>
+        </ul>
+      </div>
+      <div class="row3">
+        <ul>
+          <li><a href="legal.html" class="effect">Legal</a></li>
+
+          <li><a href="terms.html" class="effect">Terms and Conditions</a></li>
+
+          <li><a href="privacy.html" class="effect">Privacy Policy</a></li>
+
+          <li> </li>
+        </ul>
+      </div>
+    </div> <br>
+    <div class="under"> <small>Copyright &copy; 2022 See & Feel </small></div>
+  </footer>
+  </div>
+
+  <script src="car.js">
+
+  </script>
+  <script type="text/javascript">
+    var btn = document.getElementById('btn')
+
+    function leftClick() {
+      btn.style.left = '0'
+    }
+
+    function rightClick() {
+      btn.style.left = '70px'
+    }
+  </script>
+
+</body>
+
+</html>

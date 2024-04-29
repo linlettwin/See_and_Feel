@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Singup</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="login_register.css">
+        <style>
+           * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body{
+    background: linear-gradient(102.24deg, #EEC0C6 0%, #7EE8FA 98.06%);
+  }
+  /*top navigation bar*/
+  
+  @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+  .top-container {
+      width: 100%;
+      height: fit-content;
+      background-color:#33343E;
+      opacity: 1;
+      position: sticky;
+      top: 0px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+    }
+    
+    .topnav {
+     
+      width: 84%;
+      height:50px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    
+    .topnav h2 {
+      font-family: 'Itim', cursive;
+      font-size: 25px;
+    }
+    
+    .topnav .heading-link {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /*change margin left*/
+    .topnav ul {
+      display: inline-block;
+      list-style-type: none;
+    }
+    
+    .topnav li {
+      text-decoration: none;
+      display: inherit;
+      transition: 5s;
+      padding-bottom: 2px;
+  
+    }
+    
+    .topnav a {
+      font-family: 'Itim', cursive;
+      margin-left: 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      padding:10px 15px;
+    }
+    
+    
+    .topnav a:hover {
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+      border-radius:10px;
+    }
+    
+    .topnav a.active {
+      background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+      border-radius:10px;
+    }
+
+    #login{
+      margin-left:30px;
+    }
+
+    h1{
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Itim', cursive;
+    }
+  
+
+    .form-box{
+        width: 380px;
+        height: 410px;
+        position: relative;
+        margin: 2% auto;
+        background: rgba(0,0,0,0.3);
+        padding: 10px;
+        overflow: hidden;
+        border-radius: 50px;
+        margin-top:110px;
+    }
+
+    .button-box{
+        width: 180px;
+        margin: 10px auto;
+        position: relative;
+        background: linear-gradient(135.55deg, rgba(0, 0, 0, 0.2652) 0%, rgba(18, 12, 12, 0.1904) 100%);
+        backdrop-filter: blur(40px);
+        border-radius: 30px;
+    }
+
+    .toggle-btn{
+        padding: 10px 23px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+        color: white;
+    }
+
+    #btn{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 90px;
+        height: 100%;
+        background: #262626;
+        border-radius: 30px;
+        transition: .5s;
+
+    }
+
+    .input-login{
+        top: 150px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+        
+    }
+
+    .input-register{
+        top: 130px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+    }
+
+    .input-field{
+        width: 100%;
+        padding: 10px 0px;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid white;
+        outline: none;
+        background: transparent;
+        color: white;
+    }
+
+    .input-field::placeholder{
+        color: rgb(255, 255, 255);
+    }
+
+    .submit-btn{
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin:  auto;
+        background: #262626;
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .checkbox{
+        margin: 30px 10px 34px 0;
+    }
+
+    span{
+        font-size: 12px;
+        bottom: 68px;
+        position: absolute;
+    }
+
+    #login-text{
+        left: 50px;
+    }
+
+    #login-text input {
+        color:white;
+        font-size: 15;
+    }
+
+    #register{
+        left: 450px; 
+    }
+
+    #register input{
+        color: white;
+        font-size: 15;
+    }
+        </style>
+    </head>
+    <body>
+        <!--topnav -->
+        <div class="top-container">
+            <div class="topnav">
+              <div class="left">
+                <a href="home.html" class="heading-link">
+                  <h2>SEE & FEEL</h2>
+                </a>
+              </div>
+              <div class="right">
+                <ul>
+                  <li>
+                    <a href="package.html">Package</a>
+                  </li>
+                  <li>
+                    <a href="car_page_1.html">Bus</a>
+                  </li>
+                  <li>
+                    <a href="flight_page_1.html">Flights</a>
+                  </li>
+                  <li>
+                    <a href="login.html" id="login" active="login">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--topnav end-->
+
+
+          <div id="login-form" class="login-page">
+            
+            <div class="form-box">
+              <h1>See & Feel</h1>
+                <div class="button-box ">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Sign Up</button>
+                </div>
+                <form id="login-text" class="input-login">
+                    <input type="text" class="input-field" placeholder="Username" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    
+                    <button type="submit" class="submit-btn" formaction="user_login_home.html">Log in</button>
+                </form>
+
+                <form id="register" class="input-register" >
+                    <input type="text" class="input-field" placeholder="Enter your name" required>
+                    <input type="email" class="input-field" placeholder="Enter Email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    
+                    <button type="submit" class="submit-btn" style="margin-top: 20px;" >Sign up</button> 
+
+                </form>
+            </div>
+          </div>
+        
+
+          <script >
+            var x=document.getElementById('login-text');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+
+            function register()
+            {
+                x.style.left='-400px';
+                
+                y.style.left='50px';
+                z.style.left='90px';
+            }
+
+            function login()
+            {
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+          </script>
+    </body>
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>See and Feel Flight Search</title>
+    <script src="https://kit.fontawesome.com/094c1a5071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="flight_page_1.css" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+section {
+    width: 100%;
+    background:linear-gradient(180deg, #D7E1EC 0%, rgba(255, 255, 255, 0) 100%);
+    /*object-position:top 65%;*/
+}
+
+.bg-image {
+    z-index:1;
+    width: 100%;
+    margin-top:-20px;
+    background-image: url(image/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*top navigation bar*/
+/*top navigation bar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+.top-container {
+    width: 100%;
+    height: fit-content;
+    background-color:#33343E;
+    opacity: 1;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  
+  .topnav {
+   
+    width: 84%;
+    height:50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .topnav h2 {
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+  }
+  
+  .topnav .heading-link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*change margin left*/
+  .topnav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .topnav li {
+    text-decoration: none;
+    display: inherit;
+    transition: 5s;
+    padding-bottom: 2px;
+
+  }
+  
+  .topnav a {
+    font-family: 'Itim', cursive;
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px 15px;
+  }
+  
+  
+  .topnav a:hover {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius:10px;
+  }
+  
+  .topnav a.active {
+    background: radial-gradient(98.7% 98.7% at 1.81% 1.3%, rgba(86, 86, 86, 0.4554) 0%, rgba(255, 255, 255, 0.5244) 100%);
+    border-radius:10px;
+  }
+  #login{
+    margin-left:30px;
+  }
+
+.main {
+    margin-top:90px;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 100px;
+}
+
+.part {
+    margin-top: 20px;
+    color: black;
+    font-size:18px;
+    font-weight:500px;
+    line-height:35px;
+}
+
+    .part img {
+        width: 250px;
+        height: 220px;
+        margin-top: 25px;
+        margin-left:-30px;
+    }
+
+/*car form */
+.carf {
+    background-color: #EBF0F5;
+    opacity: 1;
+    border-radius:25px;
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+    .carf h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        color: black;
+    }
+
+    .carf form {
+        margin: 25px;
+
+    }
+
+    .inbox{
+        background-color:#B7C0C6;
+        border-radius:18px;
+        width:280px;
+        height:45px;
+        margin-left:9px;
+    }
+
+
+#tplace, #fplace, #ddate {
+    position:absolute;
+    border-radius:18px;
+    width: 260px;
+    height: 30px;
+    border: none;
+    padding:10px;
+    text-align:left;
+    font-size:18px;
+    font-weight:200px;
+    color:black;
+    background-color:#B7C0C6;
+    
+} 
+ input{outline:none;}
+
+#submit {
+    cursor: pointer;
+    width: 280px;
+    height: 45px;
+    border-radius:18px;
+    background-color:#B7C0C6;
+    color: black;
+    font-weight: bolder;
+    font-size:18px;
+    border: none;
+    margin-left:9px;
+}
+
+    #submit:active {
+        transform: translateY(3px);
+    }
+
+
+/* photo section */
+.photo h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight:500px;
+    margin-top: 180px;
+}
+
+.sidelines {
+    padding-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 22px;
+    margin-right: 22px;
+    flex: 2;
+}
+
+    .container div {
+        border-radius: 15px;
+        width: 250px;
+        height: 320px;
+    }
+
+    .container .no {
+        color: white;
+        font-size: 18px;
+        position: absolute;
+        bottom:15px;
+        right:10px;
+        left:10px;
+        
+    }
+.img-button{
+    border:none;
+}
+
+.photo1 {
+    background-image: url("image/cities/mdy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+}
+
+.photo2 {
+    background-image: url("package_cities/Putao.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.photo3 {
+    background-image: url("image/cities/air-myeik.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    position: relative;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(12px); 
+    opacity: 0;
+}
+    .image_overlay h3 {
+        position: absolute;
+        margin-top: 10px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .image_overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+.image_overlay:hover{
+    opacity:1;
+}
+    
+.image_overlay:hover  > * {
+       transform: translateY(0);
+       transition:transform 0.25s;
+}
+
+.image_overlay:hover + .no{
+   display:none;
+}
+
+
+/*footer part */
+footer {
+    margin-top: 100px;
+    background-color: #33343E;
+    height:fit-content;
+    line-height: 35px;
+  }
+  
+  .wrapper {
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .row1 ul,
+  .row2 ul,
+  .row3 ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .row1 li,
+  .row2 li,
+  .row3 li {
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  #style-font{font-family: 'Itim', cursive;}
+  
+  .row1 a,
+  .row2 a,
+  .row3 a {
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .wrapper a:hover {
+    padding-left: 10px;
+    color: #7EE8FA;
+    font-size: 20px;
+    border-left: 2px solid #EEC0C6;
+    margin-left: 0px;
+  }
+  
+  .under {
+    text-align: center;
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="bg-image">
+            <div class="top-container">
+                <div class="topnav">
+                  <div class="left">
+                    <a href="home.html" class="heading-link">
+                      <h2>SEE & FEEL</h2>
+                    </a>
+                  </div>
+                  <div class="right">
+                    <ul>
+                      <li>
+                        <a href="package.html">Package</a>
+                      </li>
+                      <li>
+                        <a href="car_page_1.html">Bus</a>
+                      </li>
+                      <li>
+                        <a href="flight_page1.html" class="active">Flights</a>
+                      </li>
+                      <li>
+                        <a href="login.html" id="login">Login</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="part">
+                    <h2>BOOK ONLINE FLIGHT TICKET</h2>
+                    <h3>Around Myanmar</h3>
+                    <img src="image/other/woman.png" />
+                </div>
+                <div class="carf">
+                    <h3>Search Trip</h3>
+                    <form>
+                        <div class="inbox">
+                           
+                            <input list="from" name="from" id="fplace" required="required" placeholder="&#xf5b0 From"  style="font-family:Arial, FontAwesome"  onkeyup="noNum(this) , test(this)">
+                            <datalist id="from">
+                                
+                                <option value="Bagan/Nyaung-U">
+                                    Bagan/Nyaung-U  (ပုဂံ/ညောင်ဦး)
+                                </option>
+
+                                <option value="Dawei">
+                                    Dawei  (ထားဝယ်)
+                                </option>
+
+                                <option value="HeHoe">
+                                    HeHoe  (ဟဲဟိုး)
+                                </option>
+
+                                <option value="Kale">
+                                    Kale  (ကလေး)
+                                </option>
+
+                                <option value="Keng Tung">
+                                    Keng Tung  (ကျိုင်းတုံ)
+                                </option>
+
+                                <option value="Lashio">
+                                    Lashio  (လားရှိုး)
+                                </option>
+
+                                <option value="Loikaw">
+                                    Loikaw  (လွိုင်ကော်)
+                                </option>
+
+                                <option value="Magway">
+                                    Magway  (မကွေး)
+                                </option>
+
+                                <option value="Mandalay">
+                                    Mandalay  (မန္တလေး)
+                                </option>
+
+                                <option value="Mawlamyine">
+                                    Mawlamyine  (မော်လမြိုင်)
+                                </option>
+
+                                <option value="Mogaung">
+                                    Mogaung  (မိုးကောင်း)
+                                </option>
+
+                                <option value="Monywa">
+                                    Monywa  (မုံရွာ)
+                                </option>
+
+                                <option value="Myeik">
+                                    Myeik  (မြိတ်)
+                                </option>
+
+                                <option value="Myitkyina">
+                                    Myitkyina  (မြစ်ကြီးနား)
+                                </option>
+
+                                <option value="Naypyitaw">
+                                    Naypyitaw  (နေပြည်တော် )
+                                </option>
+
+                                <option value="Pathein">
+                                    Pathein  (ပုသိမ်)
+                                </option>
+
+                                <option value="Sittwe">
+                                    Sittwe  (စစ်တွေ)
+                                </option>
+
+                                <option value="Tachileik">
+                                    Tachileik  (တာချီလိတ်)
+                                </option>
+
+                                <option value="Thandwe">
+                                    Thandwe  (သံတွဲ)
+                                </option>
+
+                                <option value="Yangon">
+                                    Yangon  (ရန်ကုန်)
+                                </option>
+
+                            </datalist>
+                        </div>
+                        <br>
+
+                        <div class="inbox">
+                            
+                            <input list="to" name="to" id="tplace" required="required" data-live-search="true" placeholder="&#xf5a0 To" style="font-family:Arial, FontAwesome" onkeyup="noNum(this) , test(this)">
+                              <datalist id="to">
+                                
+                                <option value="Bagan/Nyaung-U">
+                                    Bagan/Nyaung-U  (ပုဂံ/ညောင်ဦး)
+                                </option>
+
+                                <option value="Dawei">
+                                    Dawei  (ထားဝယ်)
+                                </option>
+
+                                <option value="HeHoe">
+                                    HeHoe  (ဟဲဟိုး)
+                                </option>
+
+                                <option value="Kale">
+                                    Kale  (ကလေး)
+                                </option>
+
+                                <option value="Keng Tung">
+                                    Keng Tung  (ကျိုင်းတုံ)
+                                </option>
+
+                                <option value="Lashio">
+                                    Lashio  (လားရှိုး)
+                                </option>
+
+                                <option value="Loikaw">
+                                    Loikaw  (လွိုင်ကော်)
+                                </option>
+
+                                <option value="Magway">
+                                    Magway  (မကွေး)
+                                </option>
+
+                                <option value="Mandalay">
+                                    Mandalay  (မန္တလေး)
+                                </option>
+
+                                <option value="Mawlamyine">
+                                    Mawlamyine  (မော်လမြိုင်)
+                                </option>
+
+                                <option value="Mogaung">
+                                    Mogaung  (မိုးကောင်း)
+                                </option>
+
+                                <option value="Monywa">
+                                    Monywa  (မုံရွာ)
+                                </option>
+
+                                <option value="Myeik">
+                                    Myeik  (မြိတ်)
+                                </option>
+
+                                <option value="Myitkyina">
+                                    Myitkyina  (မြစ်ကြီးနား)
+                                </option>
+
+                                <option value="Naypyitaw">
+                                    Naypyitaw  (နေပြည်တော် )
+                                </option>
+
+                                <option value="Pathein">
+                                    Pathein  (ပုသိမ်)
+                                </option>
+
+                                <option value="Sittwe">
+                                    Sittwe  (စစ်တွေ)
+                                </option>
+
+                                <option value="Tachileik">
+                                    Tachileik  (တာချီလိတ်)
+                                </option>
+
+                                <option value="Thandwe">
+                                    Thandwe  (သံတွဲ)
+                                </option>
+
+                                <option value="Yangon">
+                                    Yangon  (ရန်ကုန်)
+                                </option>
+                            
+                           </datalist> 
+                        </div>
+
+                        <br>
+                        <div class="inbox">
+                          <input type="text" name="ddate" id="ddate" required="required" placeholder="&#xf133 Date" style="font-family:Arial, FontAwesome" onfocus="(this.type='date')">
+                        </div>
+                        <br>
+
+                        <input type="submit" formaction="flight_page_2.html" id="submit" value="Search">
+                </form>
+               
+            </div>
+            </div>
+           
+            <div class="photo">
+                <h3 class="sidelines">Main Route</h3>
+                <form class="container">
+                    <button class="img-button" formaction="flight_page_2.html">
+                        <div class="photo1">
+                            <div class="image_overlay">
+                                <h3>Yangon-Mandalay</h3>
+                            </div>
+                            <h3 class="no">Yangon-Mandalay</h3>
+                        </div>
+                    </button>
+
+                    <button class="img-button" formaction="flight_page_2.html">
+                        <div class="photo2">
+                            <div class="image_overlay"> 
+                              <h3>Yangon-Myitkyina</h3> 
+                            </div>
+                              <h3 class="no">Yangon-Myitkyina</h3>
+                        </div>
+                    </button>
+                    
+                    <button class="img-button" formaction="flight_page_2.html">
+                        <div class="photo3">
+                            <div class="image_overlay"> 
+                              <h3>Yangon-Dawei</h3>  
+                            </div>
+                            <h3 class="no">Yangon-Dawei</h3>                       
+                        </div>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+          <div class="row1">
+            <ul>
+              <li><a href="home.html">SEE & FEEL</a></li>
+    
+              <li>CONTACT</li>
+              <li>
+                <a href="tel:+959400408919"><i class="fa-solid fa-phone"> </i> &nbsp;09-400408919</a>
+              </li>
+              <li>
+                <a href="https://www.google.com/maps/place/See+and+Feel+Travels+%26+Tours/@16.8555921,96.120638,17z/data=!3m1!4b1!4m5!3m4!1s0x30c195177494b42b:0xc6235c23151f7118!8m2!3d16.8555863!4d96.1228266" target="_blank"
+                ><i class="fa-solid fa-location-dot"> </i> &nbsp; Head Office</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row2">
+            <ul>
+              <li><a href="package.html">Package</a></li>
+              <li><a href="flight_page_1.html">Flight</a></li>
+              <li><a href="car_page_1.html">Bus</a></li>
+              <li> </li>
+            </ul>
+          </div>
+          <div class="row3">
+            <ul>
+              <li><a href="legal.html" class="effect">Legal</a></li>
+    
+              <li><a href="terms.html" class="effect">Terms and Conditions</a></li>
+    
+              <li><a href="privacy.html" class="effect">Privacy Policy</a></li>
+    
+              <li> </li>
+            </ul>
+          </div>
+        </div> <br>
+        <div class="under"> <small>Copyright &copy; 2022 See & Feel </small></div>
+      </footer>
+    <script type="text/javascript">
+        
+function noNum(input)
+{   
+    var allow=/[^a-z]/gi;
+    input.value=input.value.replace(allow,"");
+}
+
+function noLetter(input)
+{
+    var accept=/[^0-9]/gi;
+    input.value=input.value.replace(accept, "");
+}
+function test(input)
+{ 
+   input.value=input.value.charAt(0).toUpperCase()+input.value.slice(1).toLowerCase();
+}
+</script>
+</body>
+
+</html>
